@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cool E-commerce Website</title>
+    <link rel="stylesheet" href="Web.css">
+</head>
+<body>
+    <header>
+        <h1>My Cool E-commerce Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#cart">Cart</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="home" class="content">
+        <h2>Welcome to Our Cool Store</h2>
+        <p>Discover our wide range of products!</p>
+    </div>
+
+    <div id="products" class="content">
+        <h2>Products</h2>
+        <div class="product-list">
+            <!-- Product items will be dynamically added -->
+        </div>
+    </div>
+
+    <div id="contact" class="content">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea><br>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <div id="cart" class="content">
+        <h2>Shopping Cart</h2>
+        <div class="cart-items">
+            <!-- Cart items will be dynamically inserted here -->
+        </div>
+        <div class="cart-total">
+            <h3>Total: $<span id="total-price">0.00</span></h3>
+        </div>
+        <button id="checkout">Checkout</button>
+        <button id="reset-cart">Reset Cart</button>
+    </div>
+
+    <script src="Web.js"></script>
+
+    <footer>
+        <p>&copy; 2024 My Cool E-commerce Store</p>
+    </footer>
+</body>
+</html>
